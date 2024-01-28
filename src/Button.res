@@ -1,5 +1,5 @@
 // Styling from https://tailwind-elements.com/docs/standard/components/buttons/
-let make = props =>
+let make : JsxDOM.domProps => Jsx.element = props =>
   <button
     {...
     props}

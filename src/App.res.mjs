@@ -10,14 +10,17 @@ function App(props) {
         return 0;
       });
   var setCount = match[1];
+  var incr = function (x) {
+    return x + 1 | 0;
+  };
   return JsxRuntime.jsxs("div", {
               children: [
                 JsxRuntime.jsx("h1", {
-                      children: "What is this about?",
+                      children: "aathn.org",
                       className: "text-3xl font-semibold"
                     }),
                 JsxRuntime.jsx("p", {
-                      children: "This is a simple template for a Vite project using ReScript & Tailwind CSS. Wahaha!"
+                      children: "Wahaha!"
                     }),
                 JsxRuntime.jsx("h2", {
                       children: "Fast Refresh Test",
@@ -26,9 +29,7 @@ function App(props) {
                 JsxRuntime.jsx(Button.make, {
                       children: Caml_option.some("count is " + match[0].toString()),
                       onClick: (function (param) {
-                          setCount(function (count) {
-                                return count + 1 | 0;
-                              });
+                          setCount(incr);
                         })
                     }),
                 JsxRuntime.jsxs("p", {
