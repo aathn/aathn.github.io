@@ -16,7 +16,8 @@
     "@rescript/react": "^0.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rescript": "^11.0.1"
+    "rescript": "^11.0.1",
+    "kiai": "git+https://git.sr.ht/~aathn/kiai"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
