@@ -9,7 +9,7 @@ let make : unit => Jsx.element = () => {
       {React.string("Wahaha!")}
     </p>
     <h2 className="text-2xl font-semibold mt-5"> {React.string("Embedded dependency test")} </h2>
-    <Kiai />
+    <Kiai.App />
     <Button onClick={_ => incr->setCount}>
       {React.string(`count is ${count->Int.toString}`)}
     </Button>
