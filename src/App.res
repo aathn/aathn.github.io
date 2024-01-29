@@ -8,14 +8,10 @@ let make : unit => Jsx.element = () => {
     <p>
       {React.string("Wahaha!")}
     </p>
-    <h2 className="text-2xl font-semibold mt-5"> {React.string("Fast Refresh Test")} </h2>
+    <h2 className="text-2xl font-semibold mt-5"> {React.string("Embedded dependency test")} </h2>
+    <Kiai />
     <Button onClick={_ => incr->setCount}>
       {React.string(`count is ${count->Int.toString}`)}
     </Button>
-    <p>
-      {React.string("Edit ")}
-      <code> {React.string("src/App.res")} </code>
-      {React.string(" and save to test Fast Refresh.")}
-    </p>
   </div>
 }
