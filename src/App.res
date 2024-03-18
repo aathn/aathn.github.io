@@ -9,7 +9,10 @@ let make : unit => Jsx.element = () => {
       {React.string("Wahaha!")}
     </p>
     <h2 className="text-2xl font-semibold mt-5"> {React.string("Embedded dependency test")} </h2>
-    <Kiai.App />
+    <KifuLite
+  kifu="N+aathn\nN-kupo\n+7776FU\n-3334FU"
+  // TODO: rename tsume and add import
+  tsume=KifuLite.tsume()/>
     <Button onClick={_ => incr->setCount}>
       {React.string(`count is ${count->Int.toString}`)}
     </Button>
